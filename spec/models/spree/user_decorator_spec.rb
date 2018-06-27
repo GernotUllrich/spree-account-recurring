@@ -1,7 +1,7 @@
 require 'spec_helper'
 
-describe Spree::User do
-  let(:user) { Spree::User.create!(email: 'user@test.com', password: '123456', password_confirmation: '123456') }
+describe User do
+  let(:user) { User.create!(email: 'user@test.com', password: '123456', password_confirmation: '123456') }
   let(:subscriber) { Spree::Role.create!(name: 'subscriber') }
   let(:empty_array) { [] }
 
